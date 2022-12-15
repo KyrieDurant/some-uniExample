@@ -3,6 +3,12 @@
 		<view class="dataId">A页面的值为：{{id}}</view>
 		<view class="jumpBpage" @click="getBpage(id)">跳转B页面</view>
 		<view class="playMusic" @click="openPop()">自定义弹窗</view>
+		<view class="changecolorBox">
+			<view class=""></view>
+			<view class=""></view>
+			<view class=""></view>
+			<view class=""></view>
+		</view>
 	</view>
 </template>
 
@@ -138,6 +144,12 @@
 		background-color: rgb(0, 64, 255);
 		border: 5rpx solid rgb(102, 102, 255);
 		border-radius: 15rpx;
+	}
+	.changecolorBox{
+		width: 80%;
+		height: 300rpx;
+		margin-top: 50rpx;
+		border: 1rpx solid #000000;
 	}
 	
 </style>
