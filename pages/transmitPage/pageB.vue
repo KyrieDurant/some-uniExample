@@ -1,9 +1,23 @@
 <template>
 	<view class="content">
 		<view class="titles">
-			<view>传过来的id:</view>
+			<view>A页面传过来的id:</view>
 			<view class="contBox">{{content}}</view>
 		</view>
+		<!-- 小风车 -->
+		<view class="xiaofc">
+			<view class="fan">
+				<div class="top"></div>
+				<div class="right"></div>
+				<div class="bottom"></div>
+				<div class="left"></div>
+			</view>
+			<view class="stick"></view>
+			<view class="dot"></view>
+		</view>
+		<view class="jiazaidh" @click="goJiazai()">加载动画</view>
+		<view class="sdxcdai" @click="goxzPic()">小动画</view>
+		
 	</view>
 </template>
 
@@ -20,32 +34,22 @@
 			console.log('拿到id的值', this.content);
 		},
 		methods: {
-	
+			// 跳转加载动画
+			goJiazai(){
+				uni.navigateTo({
+					url:"/pages/min-animation/mni-loading/jz-loading"
+				})
+			},
+			goxzPic(){
+				uni.navigateTo({
+					url:"/pages/min-animation/rotate-Pic/rotateImg"
+				})
+			},
 		}
 	}
 </script>
 
 <style>
-	.content{
-		display: flex;
-		justify-content: center;
-	}
-	.titles{
-		height: 100rpx;
-		width: 100%;
-		display: flex;
-		justify-content: baseline;
-		align-items: center;
-	}
+	@import url("pageB.css");
 	
-	.contBox{
-		width: 100rpx;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: #fff;
-		margin-left: 10rpx;
-		background-color: rgb(51, 51, 77);
-	}
 </style>

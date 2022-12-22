@@ -19,6 +19,18 @@
 			}
 		},
 		{
+			"path": "pages/min-animation/mni-loading/jz-loading",
+			"style": {
+				"navigationBarTitleText": "加载动画"
+			}
+		},
+		{
+			"path": "pages/min-animation/rotate-Pic/rotateImg",
+			"style": {
+				"navigationBarTitleText": "小动画"
+			}
+		},
+		{
 			"path": "pages/transmitPage/musicPop",
 			"style": {
 				"navigationBarTitleText": "音乐弹窗"

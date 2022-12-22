@@ -122,6 +122,7 @@
 		animation-timing-function: linear;
 		animation-delay: 2s;
 		animation-iteration-count: infinite;
+		/* transform-origin: left; */
 	}
 
 	@keyframes xuanzhuan {

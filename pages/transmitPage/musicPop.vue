@@ -91,7 +91,9 @@
 			},
 			
 			createAudio() {
-				const audioUrl = 'https://bjetxgzv.cdn.bspapp.com/VKCEYUGU-hello-uniapp/2cc220e0-c27a-11ea-9dfb-6da8e309e0d8.mp3'
+				// 音频文件
+				// 'https://www.ytmp3.cn/down/55480.mp3'
+				const audioUrl = 'https://www.ytmp3.cn/down/55480.mp3';
 				var innerAudioContext = this._audioContext = uni.createInnerAudioContext();
 				innerAudioContext.autoplay = false;//是否自动开始播放
 				innerAudioContext.src = audioUrl;//播放链接

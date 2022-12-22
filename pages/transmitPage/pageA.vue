@@ -1,6 +1,9 @@
 <template>
 	<view class="content">
-		<view class="dataId">A页面的值为：{{id}}</view>
+		<view class="dataId">A页面的值为：{{id}}
+			<!-- <view>请输入A页面的值</view>
+			<input type="text"> -->
+		</view>
 		<view class="jumpBpage" @click="getBpage(id)">跳转B页面</view>
 		<view class="playMusic" @click="openPop()">自定义弹窗</view>
 		<view class="changecolorBox">
