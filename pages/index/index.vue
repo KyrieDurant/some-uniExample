@@ -58,6 +58,9 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.page-section{
+		margin-top: 50rpx;
+	}
 	.butPage1{
 		display: flex;
 		justify-content: center;

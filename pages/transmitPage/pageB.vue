@@ -17,7 +17,7 @@
 		</view>
 		<view class="jiazaidh" @click="goJiazai()">加载动画</view>
 		<view class="sdxcdai" @click="goxzPic()">小动画</view>
-		
+		<view class="sdxcdai" @click="gowyyPlay()">网易云</view>
 	</view>
 </template>
 
@@ -43,6 +43,11 @@
 			goxzPic(){
 				uni.navigateTo({
 					url:"/pages/min-animation/rotate-Pic/rotateImg"
+				})
+			},
+			gowyyPlay(){
+				uni.navigateTo({
+					url:"/pages/min-animation/wyyMusic/wyy-playcover"
 				})
 			},
 		}
