@@ -18,6 +18,7 @@
 		<view class="jiazaidh" @click="goJiazai()">加载动画</view>
 		<view class="sdxcdai" @click="goxzPic()">小动画</view>
 		<view class="sdxcdai" @click="gowyyPlay()">网易云</view>
+		<view class="sdxcdai" @click="goTabs()">tab切换效果</view>
 	</view>
 </template>
 
@@ -50,11 +51,16 @@
 					url:"/pages/min-animation/wyyMusic/wyy-playcover"
 				})
 			},
+			goTabs(){
+				console.log('1111');
+				uni.navigateTo({
+					url:"/pages/transmitPage/tabSwitch"
+				})
+			},
 		}
 	}
 </script>
 
 <style>
 	@import url("pageB.css");
-	
 </style>
